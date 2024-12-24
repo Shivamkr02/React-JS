@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My React App 14</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      function MyApp() {
+        let myHeading = React.createElement("h1", null, "Contact List");
+        let ul = React.createElement(
+          "ul",
+          null,
+          React.createElement("li", {style:{color:"green"}}, "Mr. Sachin Kapoor"),
+          React.createElement("a",{style:{color:"blue",textDecoration: "underline"}},"ksachin95@gmail.com"),
+          React.createElement("li", {style:{color:"red"}}, "Mr. Paramjeet Singh"),
+          React.createElement("a",{style:{color:"blue",textDecoration: "underline"}},"saini.paramjeet@gmail.com"),
+          React.createElement("li", {style:{color:"yellow"}}, "Mr. Afroz Alam"),
+          React.createElement("a",{style:{color:"blue",textDecoration: "underline"}},"alam.afroz@gmail.com")
+        );
+        let myDiv = React.createElement("div",null,[myHeading,ul]);
+        return myDiv;
+      }
+      ReactDOM.render(
+        React.createElement(MyApp),
+        document.querySelector("#root")
+      );
+    </script>
+  </body>
+</html>
