@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My React App 14</title>
+    <title>My React App 15</title>
     <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
@@ -17,13 +17,14 @@
     <div id="root"></div>
     <script>
       function MyApp() {
-        let myHeading = React.createElement("h1", null, "Contact List");
+        let myHeading = React.createElement("h1", null, "What is React ?");
+        let myPara = React.createElement("p",null,"React is a component based JS library used by : ")
         let ul = React.createElement(
           "ul",
           null,
-          React.createElement("li", null, "Mr. Sachin Kapoor"),
-          React.createElement("li", null, "Mr. Paramjeet Singh"),
-          React.createElement("li", null, "Mr. Afroz Alam")
+          React.createElement("li", null, "Facebook"),
+          React.createElement("li", null, "Instagram"),
+          React.createElement("li", null, "WhatsApp")
         );
         let myDiv = React.createElement("div",null,[myHeading,ul]);
         return myDiv;
