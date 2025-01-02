@@ -15,10 +15,17 @@
             let arr = [10,5,7,11,34,89,65,44,58,90,12];
             // Logic to pick up a radom number from the array and return 
             // hint: Math.floor() and Math.random()
+            let index = Math.floor(Math.random()*arr.length);
+            return arr[index];
         }
         function MyApp(){
-            
+            let num = getRandomNumber();
+            let myPara = <p>Number is {num}</p>;
+            let message = <small>It is {num%2===0?"Even number":"Odd number"}</small>;
+            let myDiv = <div>{myPara}{message}</div>;
+            return myDiv;
         }
+        ReactDOM.render(<MyApp/>,document.querySelector("#root"));
     </script>
 </body>
 </html>
