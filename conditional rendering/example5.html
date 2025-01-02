@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditional rendering App 5</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function getRandomNumber() {
+        let arr = [10, 5, 7, 11, 34, 89, 65, 44, 58, 90, 12];
+        let index = Math.floor(Math.random() * arr.length);
+        return arr[index];
+      }
+      function MyApp() {
+        let num = getRandomNumber();
+        let message;
+        switch(num%2===0){
+            case true:
+                message = <small>It is an even number</small>;
+                break;
+            default: 
+                message = <small>It is an Odd number</small>;
+        }
+        let myDiv = (
+          <div>
+            {<p>Number is {num}</p>}
+            {message}
+          </div>
+        );
+        return myDiv;
+      }
+      ReactDOM.render(<MyApp />, document.querySelector("#root"));
+    </script>
+  </body>
+</html>
