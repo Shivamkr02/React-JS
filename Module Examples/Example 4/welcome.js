@@ -5,4 +5,4 @@
 const PI = 3.14;
 let arr = [10,20,30,40];
 
-export{greetings,PI,arr};
+export{greetings as namaste,PI,arr};

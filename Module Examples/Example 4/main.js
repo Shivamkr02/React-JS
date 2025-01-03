@@ -1,9 +1,13 @@
-import * as x from "./welcome.js";
+import {namaste,PI,arr} from "./welcome.js";
 
-x.greetings("Shivam");
-console.log("PI is",x.PI);
+function greetings(name){
+    console.log(`Good Morning ${name}`);
+}
+greetings("Shivam");
+namaste("Shristi");
+console.log("PI is",PI);
 
-for(let n of x.arr){
+for(let n of arr){
     console.log(n);
 
 }
