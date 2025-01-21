@@ -1,4 +1,3 @@
-// This will Run but it will give undefined
 class Emp{
     constructor(id,name,sal) { 
         this.id = id;
