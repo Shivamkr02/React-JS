@@ -4,5 +4,9 @@ function choice(foods){
 }
 
 function remove(items,item){
-    
+    let arr = [...items];
+    let index = arr.indexOf(item);
+    arr.splice(index,1);
+    return arr;
 }
+export {choice,remove};
