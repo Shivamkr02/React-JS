@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import {Component} from "react";
 import foods from "./foods";
 import {choice,remove} from "./helper";
 export default class Fruits extends Component {
