@@ -1,5 +1,4 @@
 import { Component } from 'react'
-
 export default class MyButton extends Component {
     handleClick = () => {
         alert(new Date());
